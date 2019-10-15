@@ -1,0 +1,27 @@
+.sidebar {
+  background-color: #284255;
+  color: #ffffff;
+  height: 100vh;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sidebar__menu-item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sidebar__menu-link {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}
