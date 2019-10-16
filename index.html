@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-auto sidebar">
+        <ul class="sidebar__menu ul-reset">
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link" href="#"><i class="fas fa-ticket-alt"></i> Tickets</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="col-lg-auto flex-grow-1">
+        <div class="row">
+          <div class="col-12 header text-right">
+            <button type="button" class="btn btn-sm btn-secondary">Explore your plan</button>
+            <div class="dropdown d-inline-block">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">New ticket</a>
+                <a class="dropdown-item" href="#">New email</a>
+                <a class="dropdown-item" href="#">New contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 sub-header text-right">
+            <div class="dropdown d-inline-block">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layout</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Card view</a>
+                <a class="dropdown-item" href="#">Table view</a>
+              </div>
+            </div>
+            <button type="button" class="btn btn-sm btn-secondary">Export</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 content">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Фамилия</th>
+                    <th scope="col">Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@TwBootstrap</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
