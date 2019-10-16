@@ -1,8 +1,9 @@
 @import "fonts.scss";
 @import "vars.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "global.scss";
 @import "blocks/sidebar.scss";
+@import "blocks/content.scss";
 @import "blocks/header.scss";
-@import "blocks/sub-header.scss";
+@import "blocks/main.scss";
+@import "blocks/filters.scss";

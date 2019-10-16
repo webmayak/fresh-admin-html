@@ -1,6 +1,24 @@
 .header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 70px;
+  right: 0;
+}
+
+.header__row {
   background-color: #ffffff;
   border-bottom: 1px #ebeff3 solid;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
+
+  &:last-child {
+    background-color: #f5f7f9;
+    box-shadow: 0 2px 4px 0 rgba(24, 50, 71, 0.1);
+  }
+}
+
+.header__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
 }

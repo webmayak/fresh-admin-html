@@ -55,7 +55,6 @@ gulp.task("scripts", function () {
     gulp.src([
       "source/js/jquery-3.4.1.min.js",
       "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js",
       "source/js/scripts.js"
       ]),
     concat("scripts.min.js"),

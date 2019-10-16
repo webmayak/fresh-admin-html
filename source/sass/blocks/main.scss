@@ -1,0 +1,19 @@
+.main {
+  margin-top: 139px;
+  position: relative;
+}
+
+.main__content {
+  width: calc(100% - 300px);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main__filters {
+  position: fixed;
+  width: 300px;
+  top: 139px;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+}

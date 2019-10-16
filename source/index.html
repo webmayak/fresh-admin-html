@@ -12,33 +12,42 @@
 </head>
 <body>
 
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="col-auto sidebar">
-        <ul class="sidebar__menu ul-reset">
-          <li class="sidebar__menu-item">
-            <a class="sidebar__menu-link" href="#"><i class="fas fa-ticket-alt"></i> Tickets</a>
-          </li>
-        </ul>
-      </nav>
+  <nav class="sidebar">
+    <ul class="sidebar__menu ul-reset">
+      <li class="sidebar__menu-item">
+        <a class="sidebar__menu-link" href="#" title="Tickets" data-toggle="tooltip" data-placement="right">
+          <svg class="sidebar__menu-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20"><path fill="currentColor" d="M128 160h320v192H128V160zm400 96c0 26.51 21.49 48 48 48v96c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48v-96c26.51 0 48-21.49 48-48s-21.49-48-48-48v-96c0-26.51 21.49-48 48-48h480c26.51 0 48 21.49 48 48v96c-26.51 0-48 21.49-48 48zm-48-104c0-13.255-10.745-24-24-24H120c-13.255 0-24 10.745-24 24v208c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V152z"/></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-      <div class="col-lg-auto flex-grow-1">
-        <div class="row">
-          <div class="col-12 header text-right">
+  <div class="content container-fluid">
+    <div class="header">
+      <div class="header__row">
+        <div class="row align-items-center">
+          <div class="col-9">
+            <h1 class="header__title">All tickets</h1>
+          </div>
+          <div class="col-3 text-right">
             <button type="button" class="btn btn-sm btn-secondary">Explore your plan</button>
             <div class="dropdown d-inline-block">
               <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#">New ticket</a>
                 <a class="dropdown-item" href="#">New email</a>
                 <a class="dropdown-item" href="#">New contact</a>
               </div>
             </div>
           </div>
-          <div class="col-12 sub-header text-right">
+        </div>
+      </div>
+      <div class="header__row">
+        <div class="row align-items-center">
+          <div class="col-12 text-right">
             <div class="dropdown d-inline-block">
-              <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layout</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layout</button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Card view</a>
                 <a class="dropdown-item" href="#">Table view</a>
               </div>
@@ -46,45 +55,145 @@
             <button type="button" class="btn btn-sm btn-secondary">Export</button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 content">
-            <div class="table-responsive">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Имя</th>
-                    <th scope="col">Фамилия</th>
-                    <th scope="col">Username</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@TwBootstrap</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="row">
+        <div class="main__content">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Имя</th>
+                  <th scope="col">Фамилия</th>
+                  <th scope="col">Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@TwBootstrap</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="height: 2000px"></div>
+          </div>
+        </div>
+        <div class="main__filters">
+          <div class="filters">
+            <h2 class="filters__title">FILTERS</h2>
+            <form>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect1">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect2">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect3">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect3">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect4">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect4">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect5">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect5">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect6">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect6">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect7">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect7">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect8">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect8">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect9">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect9">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="filters__form-group form-group">
+                <label for="exampleFormControlSelect10">Filter</label>
+                <select class="form-control" id="exampleFormControlSelect10">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -2,8 +2,11 @@
   background-color: #284255;
   color: #ffffff;
   height: 100vh;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .sidebar__menu-item {
@@ -15,13 +18,21 @@
 }
 
 .sidebar__menu-link {
+  display: block;
   color: inherit;
   text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
   transition: 0.25s;
 
   &:hover {
     color: inherit;
     text-decoration: none;
-    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.25);
   }
+}
+
+.sidebar__menu-icon {
+  display: block;
 }
