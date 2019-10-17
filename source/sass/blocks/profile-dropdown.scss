@@ -1,0 +1,19 @@
+.profile-dropdown {
+  > .btn {
+    font-size: 12px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .dropdown-menu {
+    padding-top: 0;
+  }
+}
+
+.profile-dropdown__userinfo {
+  border-bottom: 1px solid #ebeff3;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0.5rem;
+}

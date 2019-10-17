@@ -4,7 +4,6 @@
   "private": true,
   "description": "",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "bootstrap": "^4.3.1",

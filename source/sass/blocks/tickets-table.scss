@@ -1,0 +1,38 @@
+.tickets-table {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0;
+
+  tr:hover {
+    td {
+      background-color: #f5f7f9;
+    }
+  }
+
+  thead th,
+  td {
+    border-bottom: 1px solid #ebeff3;
+  }
+
+  thead th {
+    background-color: #f5f7f9;
+    border-top: none;
+  }
+
+  td {
+    background-color: #ffffff;
+    transition: 0.25s;
+  }
+}
+
+.tickets-table__link {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.tickets-table__badge {
+  padding: 7px 12px;
+}

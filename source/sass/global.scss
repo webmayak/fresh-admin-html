@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size: 14px;
   color: $text;
 }
 
@@ -14,4 +15,40 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.dropdown-menu {
+  font-size: inherit;
+}
+
+.pagination {
+  margin: 15px 0 0;
+}
+
+.page-link {
+  color: inherit;
+}
+
+.btn {
+  min-height: 31px;
+  min-width: 31px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto 14px;
+
+  &--toggle {
+    background-image: url("../img/hide-filters.svg");
+  }
+
+  &--show {
+    transform: rotateY(180deg);
+  }
+
+  &--prev {
+    background-image: url("../img/chevron-left-solid.svg");
+  }
+
+  &--next {
+    background-image: url("../img/chevron-right-solid.svg");
+  }
 }

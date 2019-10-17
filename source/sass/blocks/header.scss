@@ -2,17 +2,17 @@
   position: fixed;
   z-index: 10;
   top: 0;
-  left: 70px;
+  left: 62px;
   right: 0;
 }
 
 .header__row {
   background-color: #ffffff;
-  border-bottom: 1px #ebeff3 solid;
+  border-bottom: 1px solid #ebeff3;
   padding: 15px;
 
   &:last-child {
-    background-color: #f5f7f9;
+    border-color: #cfd7df;
     box-shadow: 0 2px 4px 0 rgba(24, 50, 71, 0.1);
   }
 }
@@ -21,4 +21,9 @@
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.header__pagination-details {
+  vertical-align: middle;
+  margin: 0 10px;
 }
