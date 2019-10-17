@@ -9,16 +9,32 @@
   min-height: calc(100vh - 124px);
   background-color: #ebeff3;
 
+  &--with-double-details {
+    width: calc(100% - 550px);
+  }
+
   &--fullwidth {
     width: 100%;
   }
+
+  &--fullwidth#{&}--with-double-details {
+    width: calc(100% - 250px);
+
+    & ~ .main__details--second {
+      right: 0;
+    }
+  }
 }
 
-.main__filters {
+.main__details {
   position: fixed;
   width: 300px;
   top: 124px;
   bottom: 0;
   right: 0;
-  overflow-y: auto;
+
+  &--second {
+    width: 250px;
+    right: 300px;
+  }
 }
