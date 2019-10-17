@@ -32,27 +32,15 @@ img {
 .btn {
   min-height: 31px;
   min-width: 31px;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: auto 14px;
 
   &--toggle {
     background-image: url("../img/hide-filters.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto 18px;
   }
 
   &--show {
     transform: rotateY(180deg);
-  }
-
-  &--prev {
-    background-image: url("../img/chevron-left-solid.svg");
-  }
-
-  &--next {
-    background-image: url("../img/chevron-right-solid.svg");
-  }
-
-  &--star {
-    background-image: url("../img/star-regular.svg");
   }
 }
