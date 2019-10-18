@@ -21,6 +21,10 @@ img {
   font-size: inherit;
 }
 
+.dropdown-toggle--without-arrow::after {
+  display: none;
+}
+
 .pagination {
   margin: 15px 0 0;
 }

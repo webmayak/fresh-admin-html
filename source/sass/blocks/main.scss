@@ -10,7 +10,7 @@
   background-color: #ebeff3;
 
   &--with-double-details {
-    width: calc(100% - 550px);
+    width: calc(100% - 500px);
   }
 
   &--fullwidth {
@@ -20,7 +20,7 @@
   &--fullwidth#{&}--with-double-details {
     width: calc(100% - 250px);
 
-    & ~ .main__details--second {
+    & ~ .main__details--properties {
       right: 0;
     }
   }
@@ -28,13 +28,16 @@
 
 .main__details {
   position: fixed;
-  width: 300px;
+  width: 250px;
   top: 124px;
   bottom: 0;
   right: 0;
 
-  &--second {
-    width: 250px;
-    right: 300px;
+  &--filters {
+    width: 300px;
+  }
+
+  &--properties {
+    right: 250px;
   }
 }
