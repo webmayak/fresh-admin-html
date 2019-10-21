@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>FRESH-ADMIN</title>
+  <title>Ticket 885 - FRESH-ADMIN</title>
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
@@ -21,12 +21,12 @@
         </a>
       </li>
       <li class="sidebar__menu-item">
-        <a class="sidebar__menu-link" href="#" title="Contacts" data-toggle="tooltip" data-placement="right">
+        <a class="sidebar__menu-link" href="contacts.html" title="Contacts" data-toggle="tooltip" data-placement="right">
           <i class="far fa-user fa-lg sidebar__menu-icon"></i>
         </a>
       </li>
       <li class="sidebar__menu-item">
-        <a class="sidebar__menu-link" href="#" title="Tasks" data-toggle="tooltip" data-placement="right">
+        <a class="sidebar__menu-link" href="typo.html" title="Typo" data-toggle="tooltip" data-placement="right">
           <i class="fas fa-tasks fa-lg sidebar__menu-icon"></i>
         </a>
       </li>
@@ -48,7 +48,12 @@
       <div class="header__row">
         <div class="row align-items-center">
           <div class="col-8">
-            <h1 class="header__title">Ticket 885</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">All tickets</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Ticket 885</li>
+              </ol>
+            </nav>
           </div>
           <div class="col-4 text-right">
             <button type="button" class="btn btn-sm btn-secondary">Explore your plan</button>
@@ -69,7 +74,7 @@
                 </div>
                 <a class="dropdown-item" href="#">Profile settings</a>
                 <a class="dropdown-item" href="#">Go to customer portal</a>
-                <a class="dropdown-item" href="#">Sign out</a>
+                <a class="dropdown-item" href="sign-in.html">Sign out</a>
               </div>
             </div>
           </div>
@@ -111,8 +116,8 @@
     </header>
     <main class="main">
       <div class="row">
-        <div class="main__content main__content--with-double-details">
-          <div class="ticket-content">
+        <div class="main__content main__content--ticket">
+          <div class="ticket-content main-content">
             <div class="ticket-content__header mb-4">
               <div class="ticket-content__title mb-1"><i class="far fa-envelope fa-lg"></i> Запрос на подключение к вашей системе</div>
               <div class="mb-2"><b>Денис Крейцберг</b> reported via email</div>
@@ -122,7 +127,7 @@
               <div class="card">
                 <div class="card-header py-4">
                   <div class="media">
-                    <div class="ticket-content__avatar align-self-center mr-3">Д</div>
+                    <div class="ticket-content__avatar avatar align-self-center mr-3">Д</div>
                     <div class="media-body">
                       <div><b>Денис Крейцберг</b> reported via email, 17 hours ago (Thu, 17 Oct 2019 at 9:58 PM)</div>
                       <div><b>to:</b> admin@teplohod.info</div>
@@ -208,7 +213,7 @@
           <div class="details bg-light">
             <div class="details__title">Contact details</div>
             <div class="media mb-3">
-              <div class="ticket-content__avatar mr-2">Д</div>
+              <div class="ticket-content__avatar avatar mr-2">Д</div>
               <div class="media-body">
                 <div><b>Денис Крейцберг</b></div>
               </div>

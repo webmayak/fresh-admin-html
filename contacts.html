@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>All contacts - FRESH-ADMIN</title>
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <nav class="sidebar bg-dark text-white">
+    <a class="sidebar__home-link" href="index.html">
+      <i class="fas fa-igloo fa-2x sidebar__home-icon"></i>
+    </a>
+    <ul class="sidebar__menu ul-reset">
+      <li class="sidebar__menu-item">
+        <a class="sidebar__menu-link" href="index.html" title="Tickets" data-toggle="tooltip" data-placement="right">
+          <i class="fas fa-ticket-alt fa-lg sidebar__menu-icon"></i>
+        </a>
+      </li>
+      <li class="sidebar__menu-item sidebar__menu-item--active">
+        <a class="sidebar__menu-link" href="contacts.html" title="Contacts" data-toggle="tooltip" data-placement="right">
+          <i class="far fa-user fa-lg sidebar__menu-icon"></i>
+        </a>
+      </li>
+      <li class="sidebar__menu-item">
+        <a class="sidebar__menu-link" href="typo.html" title="Typo" data-toggle="tooltip" data-placement="right">
+          <i class="fas fa-tasks fa-lg sidebar__menu-icon"></i>
+        </a>
+      </li>
+      <li class="sidebar__menu-item">
+        <a class="sidebar__menu-link" href="#" title="Bookmarks" data-toggle="tooltip" data-placement="right">
+          <i class="far fa-bookmark fa-lg sidebar__menu-icon"></i>
+        </a>
+      </li>
+      <li class="sidebar__menu-item">
+        <a class="sidebar__menu-link" href="#" title="Settings" data-toggle="tooltip" data-placement="right">
+          <i class="fas fa-cog fa-lg sidebar__menu-icon"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content container-fluid">
+    <header class="header">
+      <div class="header__row">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">All contacts</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-4 text-right">
+            <button type="button" class="btn btn-sm btn-secondary">Explore your plan</button>
+            <div class="dropdown d-inline-block">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="newMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="newMenuLink">
+                <a class="dropdown-item" href="#">New ticket</a>
+                <a class="dropdown-item" href="#">New email</a>
+                <a class="dropdown-item" href="#">New contact</a>
+              </div>
+            </div>
+            <div class="dropdown profile-dropdown d-inline-block">
+              <button class="btn btn-sm btn-info dropdown-toggle dropdown-toggle--without-arrow" type="button" id="profileMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A</button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileMenuButton">
+                <div class="profile-dropdown__userinfo bg-light">
+                  <div class="font-weight-bold">Александр Костюк</div>
+                  <div class="text-secondary">admin@teplohod.info</div>
+                </div>
+                <a class="dropdown-item" href="#">Profile settings</a>
+                <a class="dropdown-item" href="#">Go to customer portal</a>
+                <a class="dropdown-item" href="sign-in.html">Sign out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__row bg-light">
+        <div class="row align-items-center">
+          <div class="col-8"></div>
+          <div class="col-4 text-right">
+            <span class="header__pagination-details">1 - 30 of 106</span>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-secondary" title="Previous"><i class="fas fa-chevron-left"></i></button>
+              <button type="button" class="btn btn-sm btn-secondary" title="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="row">
+        <div class="main__content main__content--fullwidth">
+          <table class="contacts-table table">
+            <thead>
+              <tr>
+                <th>Contact</th>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Email address</th>
+                <th>Work phone</th>
+                <th>Facebook</th>
+                <th>Twitter</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="contact.html" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #d1e4ff">)</div>
+                      <div class="media-body">
+                        <div><b>))SB)) ))))</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>sb.roma@mail.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #eed8f7">+</div>
+                      <div class="media-body">
+                        <div><b>+79307274408</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>+79307274408@mail.messages.megafon.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #ffdee0">1</div>
+                      <div class="media-body">
+                        <div><b>1</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>1@atol.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #d1e4ff">)</div>
+                      <div class="media-body">
+                        <div><b>))SB)) ))))</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>sb.roma@mail.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #eed8f7">+</div>
+                      <div class="media-body">
+                        <div><b>+79307274408</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>+79307274408@mail.messages.megafon.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #ffdee0">1</div>
+                      <div class="media-body">
+                        <div><b>1</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>1@atol.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #d1e4ff">)</div>
+                      <div class="media-body">
+                        <div><b>))SB)) ))))</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>sb.roma@mail.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #eed8f7">+</div>
+                      <div class="media-body">
+                        <div><b>+79307274408</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>+79307274408@mail.messages.megafon.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #ffdee0">1</div>
+                      <div class="media-body">
+                        <div><b>1</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>1@atol.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #d1e4ff">)</div>
+                      <div class="media-body">
+                        <div><b>))SB)) ))))</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>sb.roma@mail.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #eed8f7">+</div>
+                      <div class="media-body">
+                        <div><b>+79307274408</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>+79307274408@mail.messages.megafon.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #ffdee0">1</div>
+                      <div class="media-body">
+                        <div><b>1</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>1@atol.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #d1e4ff">)</div>
+                      <div class="media-body">
+                        <div><b>))SB)) ))))</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>sb.roma@mail.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #eed8f7">+</div>
+                      <div class="media-body">
+                        <div><b>+79307274408</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>+79307274408@mail.messages.megafon.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="contacts-table__link">
+                    <div class="media align-items-center">
+                      <div class="avatar mr-2" style="background-color: #ffdee0">1</div>
+                      <div class="media-body">
+                        <div><b>1</b></div>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>1@atol.ru</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>- -</td>
+                <td>
+                  <div class="dropdown text-right">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle--without-arrow" type="button" id="moreMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="More" data-placement="top"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenuButton">
+                      <button class="dropdown-item" type="button">Send activation email</button>
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Delete</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Table navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </main></div>
+  
+
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
