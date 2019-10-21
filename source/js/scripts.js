@@ -8,4 +8,6 @@ $(function () {
     $(this).toggleClass('btn--show').attr('title', $(this).hasClass('btn--show') ? 'Expand' : 'Collapse');;
   });
 
+  $('.toast').toast('show');
+
 });
