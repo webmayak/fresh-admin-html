@@ -74,3 +74,21 @@ img {
     transform: rotateY(180deg);
   }
 }
+
+.breadcrumb {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item {
+  &.active {
+    color: inherit;
+  }
+
+  a {
+    color: #2c5cc5;
+  }
+}

@@ -9,15 +9,19 @@
   min-height: calc(100vh - 124px);
   background-color: #ebeff3;
 
-  &--with-double-details {
+  &--ticket {
     width: calc(100% - 500px);
+  }
+
+  &--contact {
+    width: calc(100% - 250px);
   }
 
   &--fullwidth {
     width: 100%;
   }
 
-  &--fullwidth#{&}--with-double-details {
+  &--fullwidth#{&}--ticket {
     width: calc(100% - 250px);
 
     & ~ .main__details--properties {
